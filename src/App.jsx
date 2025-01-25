@@ -9,7 +9,7 @@ import SuccessPage from "./Pages/SuccessPage";
 
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter basename="/TextShare-ui">
       <Routes>
         <Route element={<LayoutWrapper />}>
           <Route path="/" element={<HomePage />} />
