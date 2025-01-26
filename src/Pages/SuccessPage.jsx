@@ -196,7 +196,7 @@ const SuccessPage = () => {
                     <p>Copy Admin Code</p>
                   </TooltipContent>
                 </Tooltip>
-                <Tooltip>
+                {/* <Tooltip>
                   <TooltipTrigger asChild>
                     <span>
                       {" "}
@@ -210,7 +210,7 @@ const SuccessPage = () => {
                   <TooltipContent>
                     <p>Copy Link</p>
                   </TooltipContent>
-                </Tooltip>
+                </Tooltip> */}
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@ const SuccessPage = () => {
                     <p>Copy User Code</p>
                   </TooltipContent>
                 </Tooltip>
-                <Tooltip>
+                {/* <Tooltip>
                   <TooltipTrigger asChild>
                     <span>
                       <CopyBtn
@@ -252,7 +252,7 @@ const SuccessPage = () => {
                   <TooltipContent>
                     <p>Copy Link</p>
                   </TooltipContent>
-                </Tooltip>
+                </Tooltip> */}
               </div>
             </div>
           </div>
