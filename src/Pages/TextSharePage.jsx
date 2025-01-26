@@ -49,7 +49,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import moment from "moment";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 
 import TextShareComponent from "@/components/common/TextShareComponent";
@@ -57,6 +57,7 @@ import redirectUrl from "../redirectURL";
 
 const TextSharePage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
 
   const [loading, setLoading] = useState(false);
@@ -71,8 +72,8 @@ const TextSharePage = () => {
   let params = useParams();
 
   useEffect(() => {
-    let pathname = window.location.pathname;
-    console.log("rrf", params);
+    let pathname = location.pathname;
+    console.log("rrf", params, location);
 
     if (pathname === "/createTextShare") {
       setLoading1(false)
