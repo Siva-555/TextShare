@@ -12,20 +12,20 @@ import NotFound from "./components/layouts/NotFound";
 function App() {
   const [validPath, setValidPath] = useState(true);
 
-  useEffect(() => {
-    // Check if the current pathname does not match the base URL '/TextShare-ui'
-    if (!window.location.pathname.startsWith("/TextShare")) {
-      setValidPath(false); // Set invalid path flag
-    }
-  }, []);
+  // useEffect(() => {
+  //   // Check if the current pathname does not match the base URL '/TextShare-ui'
+  //   if (!window.location.pathname.startsWith("/TextShare")) {
+  //     setValidPath(false); // Set invalid path flag
+  //   }
+  // }, []);
 
-  if (!validPath) {
-    // Redirect the user to the correct base URL if they visit an incorrect URL
-    window.location.replace("/TextShare");
-    return null;  // Avoid rendering anything until the redirect happens
-  }
+  // if (!validPath) {
+  //   // Redirect the user to the correct base URL if they visit an incorrect URL
+  //   window.location.replace("/TextShare");
+  //   return null;  // Avoid rendering anything until the redirect happens
+  // }
   return (
-    <BrowserRouter basename="/TextShare">
+    <BrowserRouter>
       <Routes>
         <Route element={<LayoutWrapper />}>
           <Route path="/" element={<HomePage />} />
