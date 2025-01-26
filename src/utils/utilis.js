@@ -1,3 +1,3 @@
 export const getShareURL = (id)=>{
-    return `http://localhost:5173/textShare/${id}`
+    return `https://siva-555.github.io/TextShare/textShare/${id}`
 }
