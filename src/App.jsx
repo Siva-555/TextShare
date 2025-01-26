@@ -14,18 +14,18 @@ function App() {
 
   useEffect(() => {
     // Check if the current pathname does not match the base URL '/TextShare-ui'
-    if (!window.location.pathname.startsWith("/TextShare-ui")) {
+    if (!window.location.pathname.startsWith("/TextShare")) {
       setValidPath(false); // Set invalid path flag
     }
   }, []);
 
   if (!validPath) {
     // Redirect the user to the correct base URL if they visit an incorrect URL
-    window.location.replace("/TextShare-ui");
+    window.location.replace("/TextShare");
     return null;  // Avoid rendering anything until the redirect happens
   }
   return (
-    <BrowserRouter basename="/TextShare-ui">
+    <BrowserRouter basename="/TextShare">
       <Routes>
         <Route element={<LayoutWrapper />}>
           <Route path="/" element={<HomePage />} />
